@@ -14,7 +14,7 @@
     
     <!-- META ROBOTS & CANONICAL -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://jasa-pijat-keluarga-sako-palembang.vercel.app/">
+    <link rel="canonical" href="https://jasa-pijat-keluarga-terdekat-sako-palembang.vercel.app/">
 
     <!-- META GEO-TAGGING (PALEMBANG, SUMATERA SELATAN) -->
     <meta name="geo.region" content="ID-SS">
@@ -26,8 +26,8 @@
     <meta property="og:site_name" content="Sheikhinah Family Massage & Wellness">
     <meta property="og:title" content="Jasa Pijat Keluarga Sako Palembang | Terapis Bersertifikat">
     <meta property="og:description" content="Istana relaksasi premium di Simpang Borang Sako. Area pria & wanita terpisah, terapis ahli bersertifikat resmi.">
-    <meta property="og:image" content="https://jasa-pijat-keluarga-sako-palembang.vercel.app/video-tour-jasa-pijat-sako-palembang.webp">
-    <meta property="og:url" content="https://jasa-pijat-keluarga-sako-palembang.vercel.app/">
+    <meta property="og:image" content="https://jasa-pijat-keluarga-terdekat-sako-palembang.vercel.app/video-tour-jasa-pijat-sako-palembang.webp">
+    <meta property="og:url" content="https://jasa-pijat-keluarga-terdekat-sako-palembang.vercel.app/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     
@@ -45,13 +45,13 @@
       "@graph": [
         {
           "@type": "HealthAndBeautyBusiness",
-          "@id": "https://jasa-pijat-keluarga-sako-palembang.vercel.app/#business",
+          "@id": "https://jasa-pijat-keluarga-terdekat-sako-palembang.vercel.app/#business",
           "name": "SHEIKHINAH Family Massage & Wellness",
           "alternateName": "Jasa Pijat Keluarga Sako Palembang",
           "description": "Istana relaksasi bagi tubuh dan jiwa di Sako Palembang. Menyediakan pijat keluarga, Lymphessa, Thai Shiatsu, dan Premium Waxing.",
           "telephone": "+6281534768988",
-          "url": "https://jasa-pijat-keluarga-sako-palembang.vercel.app",
-          "image": "https://jasa-pijat-keluarga-sako-palembang.vercel.app/jasa-pijat-panggilan-sako-palembang.webp",
+          "url": "https://jasa-pijat-keluarga-terdekat-sako-palembang.vercel.app",
+          "image": "https://jasa-pijat-keluarga-terdekat-sako-palembang.vercel.app/jasa-pijat-panggilan-sako-palembang.webp",
           "sameAs": [
             "https://sheikhinah.com",
             "https://maps.app.goo.gl/7CHEyLHyJDsvZW5G8"
@@ -74,7 +74,7 @@
         },
         {
           "@type": "FAQPage",
-          "@id": "https://jasa-pijat-keluarga-sako-palembang.vercel.app/#faq",
+          "@id": "https://jasa-pijat-keluarga-terdekat-sako-palembang.vercel.app/#faq",
           "mainEntity": [
             { "@type": "Question", "name": "Apakah Sheikhinah melayani jasa pijat panggilan untuk keluarga di area Sako Palembang?", "acceptedAnswer": { "@type": "Answer", "text": "Untuk saat ini, kami memfokuskan pelayanan premium di fasilitas fisik kami di Simpang Borang Sako demi menjaga standar higienitas, kenyamanan private room, dan kelengkapan alat terapi seperti Vibra dan Resona." } },
             { "@type": "Question", "name": "Berapa kisaran harga pijat reflexology dan full body massage di Simpang Borang?", "acceptedAnswer": { "@type": "Answer", "text": "Kami menawarkan harga transparan dan terjangkau untuk fasilitas premium. Hubungi admin kami untuk promo paket keluarga terbaru tanpa biaya siluman." } },
@@ -131,14 +131,45 @@
         .usp-card { background: rgba(255,255,255,0.03); padding: 2rem; border-radius: 12px; border: 1px solid var(--glass-border); border-left: 4px solid var(--accent-gold); }
         .usp-card iconify-icon { font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 1rem; }
 
-        /* BENTO GALLERY */
-        .grid-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
-        .card-img { width: 100%; height: 300px; object-fit: cover; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s; }
-        .card-img:hover { border-color: var(--accent-gold); transform: scale(1.02); }
+        /* KUSTOMISASI GRID GAMBAR VERTIKAL & KOTAK */
+        .grid-gallery-custom { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 3rem; align-items: stretch; }
+        .img-square { width: 100%; height: 350px; object-fit: cover; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s; }
+        .img-vertical { width: 100%; height: 500px; object-fit: cover; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); transition: transform 0.3s; }
+        .img-square:hover, .img-vertical:hover { border-color: var(--accent-gold); transform: scale(1.02); }
+
+        /* REVISI EKSTREM: CAROUSEL SERTIFIKAT RAKSASA */
+        .cert-wrapper { margin-top: 2rem; position: relative; }
+        .cert-hint { font-size: 0.9rem; color: var(--accent-gold); margin-bottom: 1rem; font-weight: 600; display: flex; align-items: center; justify-content: center; gap: 8px; animation: pulseText 2s infinite; }
+        @keyframes pulseText { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
         
-        .cert-marquee { display: flex; gap: 1.5rem; overflow-x: auto; padding: 2rem 0; scrollbar-width: none; }
-        .cert-marquee::-webkit-scrollbar { display: none; }
-        .cert-img { height: 200px; width: auto; object-fit: contain; border-radius: 8px; border: 1px solid var(--accent-gold); background: #fff; padding: 5px;}
+        .cert-marquee { 
+            display: flex; 
+            gap: 2rem; 
+            overflow-x: auto; 
+            padding: 1rem 0 2rem; 
+            scrollbar-width: thin; 
+            scrollbar-color: var(--accent-gold) var(--bg-surface);
+            scroll-snap-type: x mandatory; 
+            scroll-behavior: smooth;
+        }
+        /* Custom Webkit Scrollbar untuk Sertifikat */
+        .cert-marquee::-webkit-scrollbar { height: 10px; }
+        .cert-marquee::-webkit-scrollbar-track { background: var(--bg-surface); border-radius: 10px; }
+        .cert-marquee::-webkit-scrollbar-thumb { background: var(--accent-gold); border-radius: 10px; border: 2px solid var(--bg-surface); }
+        
+        .cert-img { 
+            flex: 0 0 320px; 
+            height: 450px; 
+            object-fit: contain; 
+            border-radius: 12px; 
+            border: 2px solid var(--accent-gold); 
+            background: #fff; 
+            padding: 10px;
+            scroll-snap-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            transition: transform 0.3s;
+        }
+        .cert-img:hover { transform: scale(1.03); }
 
         /* GEO TABLE (SEO & SGE OPTIMIZED) */
         .geo-table-wrapper { width: 100%; overflow-x: auto; margin-bottom: 3rem; background: #111; border: 1px solid var(--glass-border); border-radius: 12px;}
@@ -184,6 +215,8 @@
             .hero { padding-top: 4rem; }
             .grid-2-faq { grid-template-columns: 1fr; }
             .glass-panel-form { padding: 2rem 1.5rem; }
+            .img-square, .img-vertical { height: 350px; }
+            .cert-img { flex: 0 0 280px; height: 400px; }
             body { padding-bottom: 120px; }
         }
     </style>
@@ -247,21 +280,35 @@
         <h2>Fasilitas Megah & Bukti Legalitas Kami</h2>
         <p style="margin-bottom: 3rem;">Kami bukan sekadar tukang pijat panggilan biasa. Lihat langsung fasilitas premium kami di Simpang Borang Sako yang telah memenuhi standar kebersihan tertinggi nasional.</p>
         
-        <div class="grid-gallery">
-            <img src="jasa-pijat-panggilan-sako-palembang.webp" alt="Gedung Mewah Sheikhinah Massage" class="card-img" loading="lazy">
-            <img src="tempat-pijat-terdekat-sako-palembang.webp" alt="Fasilitas Premium Pijat Sako Palembang" class="card-img" loading="lazy">
-            <img src="ruang-pijat-refleksi-bersih-palembang.webp" alt="Private Room Pijat Bersih Palembang" class="card-img" loading="lazy">
+        <!-- IMPLEMENTASI GRID GAMBAR ASIMETRIS -->
+        <div class="grid-gallery-custom">
+            <!-- Gambar 1: Fasad Gedung (Kotak/Square) -->
+            <img src="jasa-pijat-panggilan-sako-palembang.webp" alt="Gedung Mewah Sheikhinah Massage" class="img-square" loading="lazy">
+            
+            <!-- Gambar 2: Brosur Promo (Vertikal) -->
+            <img src="promo-harga-pijat-murah-palembang.webp" alt="Promo Harga Pijat Palembang" class="img-vertical" loading="lazy">
+            
+            <!-- Gambar 3: Ruang Private (Vertikal) -->
+            <img src="ruang-pijat-refleksi-bersih-palembang.webp" alt="Private Room Pijat Bersih Palembang" class="img-vertical" loading="lazy">
         </div>
 
-        <h3 style="margin-top: 4rem; color: var(--accent-gold-light);">Lisensi Resmi Terapis Nasional</h3>
+        <h3 style="margin-top: 5rem; color: var(--accent-gold-light);">Lisensi Resmi Terapis Nasional</h3>
         <p>Setiap sentuhan memiliki dasar ilmu anatomi yang diawasi oleh <strong>Asosiasi Pemijat Kesehatan Nasional</strong>.</p>
-        <div class="cert-marquee">
-            <img src="terapis-pijat-bersertifikat-palembang-1.webp" class="cert-img" alt="Sertifikat IWSPA Palembang" loading="lazy">
-            <img src="terapis-pijat-bersertifikat-palembang-2.webp" class="cert-img" alt="Sertifikat PERP4RI Palembang" loading="lazy">
-            <img src="terapis-pijat-bersertifikat-palembang-3.webp" class="cert-img" alt="Sertifikat P-AP3I Palembang" loading="lazy">
-            <img src="terapis-pijat-bersertifikat-palembang-4.webp" class="cert-img" alt="Sertifikasi Terapis Palembang" loading="lazy">
-            <img src="terapis-pijat-bersertifikat-palembang-5.webp" class="cert-img" alt="ID Card Terapis Pijat Sako" loading="lazy">
+        
+        <!-- REVISI CAROUSEL SERTIFIKAT RAKSASA -->
+        <div class="cert-wrapper">
+            <div class="cert-hint">
+                <iconify-icon icon="solar:cursor-square-bold"></iconify-icon> Geser ke kiri/kanan untuk melihat detail lisensi
+            </div>
+            <div class="cert-marquee">
+                <img src="terapis-pijat-bersertifikat-palembang-1.webp" class="cert-img" alt="Sertifikat IWSPA Palembang" loading="lazy">
+                <img src="terapis-pijat-bersertifikat-palembang-2.webp" class="cert-img" alt="Sertifikat PERP4RI Palembang" loading="lazy">
+                <img src="terapis-pijat-bersertifikat-palembang-3.webp" class="cert-img" alt="Sertifikat P-AP3I Palembang" loading="lazy">
+                <img src="terapis-pijat-bersertifikat-palembang-4.webp" class="cert-img" alt="Sertifikasi Terapis Palembang" loading="lazy">
+                <img src="terapis-pijat-bersertifikat-palembang-5.webp" class="cert-img" alt="ID Card Terapis Pijat Sako" loading="lazy">
+            </div>
         </div>
+
     </div>
 </section>
 
@@ -312,7 +359,7 @@
         </div>
 
         <div class="text-center" style="margin-top: 4rem;">
-            <a href="https://wa.me/6281534768988?text=Halo,%20boleh%20minta%20daftar%20harga%20dan%20menu?" class="btn-gold" style="display: inline-flex;" target="_blank">LIHAT MENU & DAFTAR HARGA</a>
+            <a href="layanan-pijat-relaksasi-palembang.html" class="btn-gold" style="display: inline-flex;">PELAJARI DETAIL LAYANAN & HARGA KAMI</a>
         </div>
     </div>
 </section>
@@ -489,7 +536,7 @@
 <script>
     // 1. VIDEO FACADE
     function playVideo() {
-        document.getElementById('facadeWrapper').innerHTML = `<video src="video sheikhinah.mp4" autoplay controls style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;"></video>`;
+        document.getElementById('facadeWrapper').innerHTML = `<video src="video-sheikhinah.mp4" autoplay controls style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;"></video>`;
     }
 
     // 2. AUDIBLE FAQ CLOSER
